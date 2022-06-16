@@ -1,3 +1,21 @@
 h1 {
-    background-color: rgba(224, 241, 176, 0);
+
+    
+    font-size: 70px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-radial-gradient(circle closest-corner at 100px 100px, #0b582e, #0d32d6 10%, #0b582e 20%);
+
+
 }
+
+h1 span {
+    
+    mix-blend-mode: multiply;
+}
+
+/* h1 span:nth-child(1) {
+    color: rgba(#AB1795, 0.75);
+} */
