@@ -1,21 +1,36 @@
-h1 {
+#top_page {
 
+    width: 930px;
+
+    background: url("cherished_photos/binary.jpg") repeat;
+    /*background-color: darkkhaki;*/
     
-    font-size: 70px;
+    
+    border: 5px outset rgb(197, 235, 189);
+    text-align: center;
+
+    font-size: 130;
+
+
+
+}
+
+#inline_top {
+
+    margin: 75px;
+    
+    opacity: 0.99;
+    border: 20px solid black;
+
+}
+
+#title {
+
+    font: 200;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:firebrick;
     font-weight: 600;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: repeating-radial-gradient(circle closest-corner at 100px 100px, #0b582e, #0d32d6 10%, #0b582e 20%);
-
 
 }
 
-h1 span {
-    
-    mix-blend-mode: multiply;
-}
-
-/* h1 span:nth-child(1) {
-    color: rgba(#AB1795, 0.75);
-} */
+/* add snail animation */
