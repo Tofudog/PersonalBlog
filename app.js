@@ -1,41 +1,21 @@
+document.querySelectorAll("a").setAttribute('target', "_blank");
 
 
-var zoom = 1;
-var width = 100;
-
-function bigger() {
-    zoom = zoom + 0.1;
-    width = 100 / zoom;
-    document.body.style.transformOrigin = "left top";
-    document.body.style.transform = "scale(" + zoom + ")";
-    document.body.style.width = width + "%";
-}
-function smaller() {
-    zoom = zoom - 0.1;
-    width = 100 / zoom;
-    document.body.style.transformOrigin = "left top";
-    document.body.style.transform = "scale(" + zoom + ")";
-    document.body.style.width = width + "%";
-}
-
-
-
-
-
-
-
-function displaySum() {
-    let firstNum = Number(document.getElementById('firstNum').innerHTML)
-    let secondNum = Number(document.getElementById('secondNum').innerHTML)
-  
-    let total = firstNum + secondNum;
-    document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
-  }
-  
-  document.getElementById('sumButton').addEventListener("click", displaySum);
-
-  function sendEmail() {
-    
+//const subscriber = document.getElementById("emailInput").value;
+function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com",
+      To: 'leodefarias25@gmail.com',
+      From: subscriber,
+      Subject: "Sending Email using javascript",
+      Body: "Well that was easy!!",
+    }).then(function (message) {
+        alert("mail sent successfully")
+      });
   }
 
+function clickButton() {
+  var button = document.getElementById("ABC");
+  document.getElementById("ABC").setAttribute('style', 'background-color:red');
+}
 

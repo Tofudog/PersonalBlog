@@ -6,21 +6,215 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="design.css">
-  <title>Document</title>
+  <title>The Leonardo de Farias Blog</title>
+  <link rel="icon" href=
+      "http://1.bp.blogspot.com/-X2_AZnOTLdE/URfSipllZ0I/AAAAAAAAAjU/8NiETuuWxeQ/s1600/cool%2Bwave.jpg"
+      type = "image/x-icon">
+  <style>
+    .imgFrame {
+      border: 4px solid black;
+      margin: 5px;
+    }
+    .synopsis {
+      font-size: 20px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 475;
+    }
+    .splitscreen {
+      display: flex;
+    }
+    .splitscreen .left,
+    .splitscreen .right {
+      flex: 0.18;
+    }
+    .side_by_side {
+      float: left;
+    }
+    .article {
+      border: 10px bold black;
+      padding-right: 30px;
+      margin: 5px;
+    }
+    .media_button {
+      border: 5px bold black;
+      padding-right: 20px;
+      margin: 5px;
+    }
+    .stop_side_by_side {
+      clear: both;
+    }
+    .whitespace {
+      font-size: 0px;
+      opacity: 0.000001;
+      padding-bottom: 1000px;
+    }
+    </style>
 </head>
 
-<div id="top_page">
-  <div id="inline_top">
-    <h1 id="title">
-      The Leonardo de Farias Blog
-    </h1>
-    <h4>
-      Scroll to peruse my blog
-    </h4>
+<body>
+  <div id="top_page">
+    <div id="inline_top">
+      <h1 id="title">
+        The Leonardo de Farias Blog
+      </h1>
+      <div class="side_by_side">
+        <a href="#MyArticles">Jump to Articles</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://docs.google.com/document/d/1TAcBafN7Uri9rc1y3O-XSDcmDXj3-53n_QjiITNMWSk/edit" target="_blank">Resume</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="C3BO.html">C3BO</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a>Current Projects</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/Tofudog/USACO_Journey" target="_blank">
+          Competitive Programming Journey</a>
+      </div>
+      <div class="stop_side_by_side"></div>
+    </div>
   </div>
-</div>
 
-<h1 id="header_1"> Image behind me</h1>
+
+
+  <div id="Side_Bar">
+    <p><br><br><br><br><br><br><br><br><br></p>
+  </div>
+
+  <div class="splitscreen">
+    <div class="left">
+      <img src="cherished_photos//leonardo_isef.jpg" class="imgFrame">
+    </div>
+    <div class="right">
+      <p class="synopsis">
+        Hello There! I am Leonardo Amato Regis de Farias, a rising senior who is passionate
+        about App. dev, deep learning, and now, web designing.
+      </p>
+    </div>
+  </div>
+
+  <div class="stop_side_by_side">
+    <p>
+      Once upon a time, a Brazillian monk told me not to smoke
+      a cigarette. There the King of Saudi Arabia shook my hand
+      and said.... something in a language I could not understand!
+      Understand the potential implications of robery and your mind will never invoke stealing.
+      But only practice will refrain the power of snatching. -Me
+    </p>
+    <p>
+      Greetings from Lubbock, Texas, where there is wind and dirt and some more wind!
+    </p>
+    <p>
+      I am more than willing to keep in touch via any application I list in the bottom.
+      For instance; email, linkedin, slack... or even chess.com!!!
+    </p>
+  </div>
+
+  <div>
+    <h2 id="MyArticles">My Articles!</h2>
+  </div>
+
+  <div class="side_by_side">
+    <a href="https://studentsxstudents.com/the-unreasonable-effectiveness-of-semi-supervised-learning-in-healthcare-e0b8032490bc" target="_blank">
+      <img class="article" height="200px" width="275px" src="articles/article1.jpg">
+    </a>
+    <a href="https://medium.com/@leodefarias25/organizing-a-mess-with-computer-vision-f5b06e4586e9" target="_blank">
+      <img class="article" height="200px" width="275px" src="articles/article2.jpg">
+    </a>
+    <a href="https://medium.com/p/e039ef93fde0/edit" target="_blank">
+      <img class="article" height="200px" width="275px" src="articles/article3.jpg">
+    </a>
+  </div>
+
+  <div class="stop_side_by_side">
+    <p></p>
+    <h3>Interesting books I have read</h3>
+    <label for="book-choice">Find a book I have (or have not) read:</label>
+    <input list="books-read" id="book-choice" name="book-choice" />
+    <datalist id="books-read">
+        <option value="1984">
+        <option value="Hillbilly Elegy">
+        <option value="The World is Flat">
+        <option value="City of Thieves">
+        <option value="Journey to the Center of the Earth">
+        <option value="Hamlet">
+        <option value="Remains of the Day">
+        <option value="Great Expectations">
+        <option value="The Alchemist">
+    </datalist>
+  </div>
+  
+  
+
+  <h3 class="stop_side_by_side" id="contact">Get a monthly subscription about something you might care about!</h3>
+  <div id="credentials" class="side_by_side">
+    <input id="emailInput" value="email...">
+    <form method="post">
+      <input type="button" id="subButton" value="Click!" onclick="sendEmail()">
+    </form>
+  </div>
+
+  <div class="stop_side_by_side"></div>
+  <div>
+    <input id="ABC" type="button" onclick="clickButton()" value="ABC"> 
+  </div>
+
+  <div>
+    <br><br><br><br>
+  </div>
+
+
+  <div class="side_by_side">
+    <a href="https://www.linkedin.com/in/leonardo-de-farias-857167222/" target="_blank">
+      <img class="media_button" src="application_photos/linkedin.jpg" width="110px" height="105px">
+    </a>
+    <a href="https://www.chess.com/member/leonardodefarias25" target="_blank">
+      <img class="media_button" src="application_photos/chess.jpg" width="68px" height="107px">
+    </a>
+    <a href="https://github.com/Tofudog" target="_blank">
+      <img class="media_button" src="application_photos/github.jpg" width="112px" height="112px">
+    </a>
+    <figure>
+      <blockquote>
+          <p>You are the average of the five people you contact with the most.
+             You should probably contact me because I raise the subjective and undefined
+             statistical mean. There's Also a bunch of other quotes by Yoda</p>
+      </blockquote>
+      <figcaption>—Leonardo de Farias, <cite>Time I met the Hillbillies</cite></figcaption>
+  </figure>
+  </div>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+
+
+
+
+<!-- <script type="text/javascript">
+  function sendEmail() {
+    var btn = document.getElementById('subButton');
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var subscriber = document.getElementById('emailInput').value;
+      console.log(`Hey ${subscriber}, Glad you want to keep touch!`)
+      Email.send({
+      Host: "smtp.gmail.com",
+      Username: "leodefarias25@gmail.com",
+      Password: "",
+      To: 'leodefarias25@gmail.com',
+      From: subscriber,
+      Subject: "Sending Email using javascript",
+      Body: "Sending that email yo dawg!",
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+    })
+
+  }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
 
 </html>

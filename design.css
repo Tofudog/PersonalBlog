@@ -1,36 +1,85 @@
-#top_page {
+html {
+    scroll-behavior: smooth;
+}
 
-    width: 930px;
+body {
+    /*background: url("cherished_photos/c3po_bg.jpg");*/
+    background-color: rgb(167, 151, 100);
+    /*background-blend-mode:soft-light;*/
+}
 
-    background: url("cherished_photos/binary.jpg") repeat;
-    /*background-color: darkkhaki;*/
-    
-    
-    border: 5px outset rgb(197, 235, 189);
+h2 {
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
     text-align: center;
+}
 
+h4 {
+    font-size: medium;
+}
+
+br {
+    padding-bottom: 2000px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+a:link {    /* unvisited link */
+    color: #ff0000;
+    text-decoration: none;
+    border-bottom: 0px solid;
+}
+a:visited {    /* visited link */
+    color: #c000c0;
+}
+a:hover {    /* mouse over link */
+    color: #e7d84b;
+    border-bottom: none;
+}
+a:active {    /* active link */
+    color: #928831;
+}
+
+#top_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1350px;
+    height:160px;
+    background-color: bisque;
+    opacity: 0.9;
+    /*border: 1px outset rgb(197, 235, 189);*/
+    text-align: center;
     font-size: 130;
-
-
-
 }
 
 #inline_top {
-
-    margin: 75px;
-    
-    opacity: 0.99;
-    border: 20px solid black;
-
+    margin: 7px;
+    border: 10px solid black;
 }
 
 #title {
-
     font: 200;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:firebrick;
-    font-weight: 600;
-
+    color:rgb(87, 9, 9);
+    font-weight: 650;
 }
 
-/* add snail animation */
+/*
+#sendButton {
+    width: 70px;
+    border-radius: 2px;
+    background-color: rgb(216, 237, 100);
+}*/
+
+#contact {
+    text-align: left;
+}
+
